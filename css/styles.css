@@ -310,3 +310,292 @@ nav {
   height: 4px;
   background: linear-gradient(90deg, var(--latte), #d4964a, var(--latte));
 }
+
+/* Section Styles */
+
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.6rem;
+  color: var(--espresso);
+}
+
+.section,
+.why-section,
+.testimonials {
+  padding: 2.5rem 1.25rem;
+}
+.section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.section-label {
+  display: block;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--latte);
+  margin-bottom: 0.5rem;
+  font-size: 0.72rem;
+}
+
+/* Drinks */
+
+.drinks-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+.drink-card {
+  overflow: hidden;
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s;
+  background: var(--ceramic);
+}
+
+.drink-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(44, 26, 14, 0.12);
+}
+
+.drink-img {
+  width: 100%;
+  height: 200px;
+  background: #c9a87a center/cover no-repeat;
+}
+
+.drink-info {
+  padding: 1.25rem;
+}
+
+.drink-name {
+  font-family: "Playfair Display", serif;
+  font-size: 1.05rem;
+  color: var(--espresso);
+  margin-bottom: 0.3rem;
+}
+
+.drink-desc {
+  font-size: 0.84rem;
+  color: #6a5040;
+  font-weight: 300;
+}
+.drink-price {
+  display: none;
+}
+
+/* Why Little Embers Section */
+.why-section {
+  background: var(--espresso);
+  color: var(--ceramic);
+}
+.why-section .section-label {
+  color: var(--latte);
+}
+.why-section .section-title {
+  color: var(--ceramic);
+}
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+.why-item {
+  text-align: center;
+  padding: 1.75rem 1.25rem;
+  border: 1px solid rgba(180, 134, 63, 0.2);
+  transition: border-color 0.2s;
+}
+
+.why-item:hover {
+  border-color: rgba(180, 134, 63, 0.6);
+}
+.why-icon {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+.why-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  color: var(--ceramic);
+  margin-bottom: 0.5rem;
+}
+
+.why-desc {
+  font-size: 0.84rem;
+  color: #9a7a58;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+/*Testimonials */
+
+.testimonials {
+  background: var(--ceramic);
+}
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+.testimonial-card {
+  background: var(--warm-white);
+  padding: 1.75rem;
+}
+.quote-mark {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  color: var(--latte);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-text {
+  font-size: 0.88rem;
+  color: #4a3020;
+  font-style: italic;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+.testimonial-author {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--espresso);
+}
+.testimonial-role {
+  font-size: 0.78rem;
+  color: var(--latte);
+  letter-spacing: 0.06em;
+}
+
+/* Footer */
+
+footer {
+  background: var(--dark-roast);
+  color: var(--ceramic);
+  padding: 2.5rem 1.25rem 1.5rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-logo {
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  color: var(--ceramic);
+  margin-bottom: 0.75rem;
+}
+
+.footer-tagline {
+  font-size: 0.82rem;
+  color: #9a7a58;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.footer-heading {
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--latte);
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footer-links a {
+  font-size: 0.84rem;
+  color: #9a7a58;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: var(--ceramic);
+}
+
+.footer-contact {
+  font-size: 0.84rem;
+  color: #9a7a58;
+  font-weight: 300;
+  line-height: 1.9;
+}
+
+/* Newsletter Form */
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.newsletter-input {
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(180, 134, 63, 0.3);
+  color: var(--ceramic);
+  font-size: 0.82rem;
+  outline: none;
+}
+
+.newsletter-input::placeholder {
+  color: #6a5040;
+}
+.newsletter-btn {
+  width: 100%;
+  padding: 0.7rem;
+  background: var(--latte);
+  border: none;
+  color: #fff;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.newsletter-btn:hover {
+  background: #c9963f;
+}
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 0.78rem;
+  color: #6a5040;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+.social-icon {
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(180, 134, 63, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  color: var(--latte);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.social-icon:hover {
+  background: var(--latte);
+  color: #fff;
+}
+
+/* Tablet Media Query */
