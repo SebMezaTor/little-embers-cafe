@@ -599,3 +599,89 @@ footer {
 }
 
 /* Tablet Media Query */
+
+@media screen and (min-width: 601px) {
+  .nav-links {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 2rem;
+    border-top: none;
+    background: transparent;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-links a {
+    font-size: 0.82rem;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .hero-btns {
+    flex-direction: row;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: auto;
+  }
+
+  .img-placeholder {
+    height: 300px;
+  }
+
+  .section,
+  .why-section,
+  .testimonials {
+    padding: 3.5rem 2.5rem;
+  }
+  .section-title {
+    font-size: 1.9rem;
+  }
+
+  .drinks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .why-grid .why-item:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-grid .testimonial-card:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .newsletter-form {
+    flex-direction: row;
+  }
+
+  .newsletter-input {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .newsletter-btn {
+    width: auto;
+    white-space: nowrap;
+  }
+}
