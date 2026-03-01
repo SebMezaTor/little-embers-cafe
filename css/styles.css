@@ -133,6 +133,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 /* color pairings from my moodboard */
 :root {
   --espresso: #2c1a0e;
@@ -683,5 +689,93 @@ footer {
   .newsletter-btn {
     width: auto;
     white-space: nowrap;
+  }
+}
+/* Desktop Screen Size */
+@media screen and (min-width: 901px) {
+  nav {
+    padding: 0.4rem;
+  }
+  .logo {
+    font-size: 1.25rem;
+  }
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 560px;
+  }
+  .hero-text {
+    animation: fadeInLeft 0.8s ease-out;
+    padding: 4rem 3rem 4rem 5rem;
+  }
+
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+  }
+  .hero-sub {
+    max-width: 400px;
+  }
+  .img-placeholder {
+    height: 100%;
+    min-height: 400px;
+  }
+
+  .section,
+  .testimonials {
+    padding: 5rem;
+  }
+  .why-section {
+    padding: 5rem;
+  }
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .drinks-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .drink-img {
+    height: 200px;
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+  .why-grid .why-item:last-child {
+    grid-column: auto;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .testimonials-grid .testimonial-card:last-child {
+    grid-column: auto;
+  }
+
+  footer {
+    padding: 4rem 5rem 2rem;
+  }
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1.5fr 2fr;
+    gap: 3rem;
+  }
+  .newsletter-tagline {
+    color: #9a7a58;
+    font-weight: 300;
+    font-size: 0.82rem;
   }
 }
