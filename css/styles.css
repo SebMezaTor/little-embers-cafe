@@ -127,3 +127,91 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+:root {
+  --espresso: #2c1a0e;
+  --ceramic: #f5ede3;
+  --latte: #b4863f;
+  --dark-roast: #1a0f07;
+  --warm-white: #fdf8f3;
+}
+
+/* GLOBAL STYLES (Mobile) */
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--warm-white);
+  color: var(--espresso);
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--espresso);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+  height: 64px;
+}
+
+.logo {
+  font-family: "Playfair Display", Serif;
+  font-size: 1.1rem;
+  color: var(--ceramic);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 4px;
+  background: none;
+  border: none;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--ceramic);
+  transition: all 0.3s;
+}
+
+.nav-links {
+  display: none;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
+  background: var(--espresso);
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5rem 1.25rem;
+  gap: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav-links.open {
+  display: flex;
+}
+.nav-links a {
+  color: #c9b49a;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--ceramic);
+}
+.cart-icon {
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #c9b49a;
+}
