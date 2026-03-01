@@ -3,6 +3,12 @@
    License: none (public domain)
 */
 
+/*
+Sebastian Meza-Torres
+GIT 480
+Little Embers Café Shop
+*/
+
 html,
 body,
 div,
@@ -127,7 +133,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+/* color pairings from my moodboard */
 :root {
   --espresso: #2c1a0e;
   --ceramic: #f5ede3;
@@ -137,7 +143,7 @@ table {
 }
 
 /* GLOBAL STYLES (Mobile) */
-
+/* Beginning of Home Page */
 body {
   font-family: "Lato", sans-serif;
   background-color: var(--warm-white);
@@ -214,4 +220,93 @@ nav {
   font-size: 1.1rem;
   cursor: pointer;
   color: #c9b49a;
+}
+
+/* Hero Section */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  background: var(--warm-white);
+}
+
+.hero-text {
+  padding: 2.5rem 1.25rem;
+}
+
+.hero-eyebrow {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--latte);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: var(--espresso);
+  margin-bottom: 1rem;
+}
+
+.hero-title em {
+  color: var(--latte);
+  font-style: italic;
+}
+.hero-sub {
+  font-size: 0.95rem;
+  color: #6a5040;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-bottom: 1.75rem;
+}
+
+.hero-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.btn-primary,
+.btn-secondary {
+  width: 100%;
+  text-align: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: "Lato", sans-serif;
+}
+
+.btn-primary {
+  background: var(--espresso);
+  color: var(--ceramic);
+  border: none;
+}
+.btn-primary:hover {
+  background: #1a0f07;
+}
+.btn-secondary {
+  background: transparent;
+  color: var(--espresso);
+  border: 1px solid var(--espresso);
+}
+.btn-secondary:hover {
+  background: var(--espresso);
+  color: var(--ceramic);
+}
+
+.img-placeholder {
+  width: 100%;
+  height: 240px;
+  background: #c9a87a center/cover no-repeat;
+}
+
+.accent-strip {
+  height: 4px;
+  background: linear-gradient(90deg, var(--latte), #d4964a, var(--latte));
 }
