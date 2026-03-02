@@ -149,7 +149,7 @@ table {
 }
 
 /* GLOBAL STYLES (Mobile) */
-/* Beginning of Home Page */
+/* ==============  Beginning of Home Page =============== */
 body {
   font-family: "Lato", sans-serif;
   background-color: var(--warm-white);
@@ -604,6 +604,8 @@ footer {
   color: #fff;
 }
 
+/* =========== END OF HOME PAGE ================ */
+
 /* Tablet Media Query */
 
 @media screen and (min-width: 601px) {
@@ -690,6 +692,8 @@ footer {
     width: auto;
     white-space: nowrap;
   }
+
+  /* =========== END OF HOME PAGE ========== */
 }
 /* Desktop Screen Size */
 @media screen and (min-width: 901px) {
@@ -778,4 +782,6 @@ footer {
     font-weight: 300;
     font-size: 0.82rem;
   }
+
+  /* ============= END OF HOMEPAGE ============= */
 }
