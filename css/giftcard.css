@@ -1352,4 +1352,129 @@ footer {
   .field-row {
     grid-template-columns: 1fr 1fr;
   }
+
+  .delivery-btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+  }
+
+  .how-strip {
+    padding: 4rem 2rem;
+  }
+
+  .how-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 3rem;
+  }
+
+  footer {
+    padding: 2.5rem 2rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .newsletter-form {
+    flex-direction: row;
+  }
+
+  .modal {
+    padding: 2.8rem 2.5rem;
+  }
+
+  .modal-code {
+    font-size: 1.5rem;
+    letter-spacing: 0.2em;
+  }
+
+  /* Desktop Screens */
+
+  nav {
+    padding: 0.3rem;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    color: var(--dark-roast);
+    transition: color var(--transition);
+    position: relative;
+  }
+
+  .nav-links a:hover {
+    color: var(--espresso);
+  }
+
+  .nav-links a.active {
+    color: var(--espresso);
+  }
+
+  .nav-links a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--latte);
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .gift-wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 4rem 2rem 5rem;
+  }
+
+  .preview-panel {
+    order: 0;
+    position: sticky;
+    top: calc(var(--nav-h) + 2rem);
+  }
+
+  .how-grid {
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .how-grid::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 28px;
+    left: calc(12.5% + 1rem);
+    right: calc(12.5% +1rem);
+    height: 1px;
+    opacity: 0.4;
+    pointer-events: none;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--latte),
+      var(--latte),
+      var(--latte),
+      transparent
+    );
+  }
+
+  footer {
+    padding: 3rem 4rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1.5fr 2fr;
+    gap: 3rem;
+  }
 }
