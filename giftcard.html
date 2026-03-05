@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -32,292 +32,405 @@
         </ul>
         <div class="nav-actions">
           <button class="cart-btn" aria-label="Cart"></button>
-          <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false"
-          <span></span><span></span><span></span>
-        </button>
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <svg
+              width="24"
+              height="18"
+              viewBox="0 0 24 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="24" height="2" rx="1" fill="#512c0a" />
+              <rect y="8" width="24" height="2" rx="1" fill="#512c0a" />
+              <rect y="16" width="24" height="2" rx="1" fill="#512c0a" />
+            </svg>
+          </button>
         </div>
-        </nav>
-        <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
-          <a href="#">Home</a>
-          <a href="#">Menu</a>
-          <a href="#">About Us</a>
-          <a href="#">Contact</a>
-          <a href="#" class="active">Gift Cards</a>
-          </nav>
-          <div class="accent-strip"></div>
-          </header>
-          <section class="page-banner">
-            <div class="banner-inner">
-              <span class="banner-eyebrow">Give the Gift of Coffee</span>
-              <h1 class="banner-title">Share a <em>Warm Moment</em></h1>
-              <p class="banner-sub">Send someone you love a Little Embers gift card - perfect for any occasion, redeemable in-store and online.</p>
+      </nav>
+      <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#" class="active">Gift Cards</a>
+      </nav>
+      <div class="accent-strip"></div>
+    </header>
+    <section class="page-banner">
+      <div class="banner-inner">
+        <span class="banner-eyebrow">Give the Gift of Coffee</span>
+        <h1 class="banner-title">Share a <em>Warm Moment</em></h1>
+        <p class="banner-sub">
+          Send someone you love a Little Embers gift card - perfect for any
+          occasion, redeemable in-store and online.
+        </p>
+      </div>
+    </section>
+    <main>
+      <div class="gift-wrapper">
+        <div class="form-panel">
+          <!-- Amount -->
+          <div class="step-block">
+            <div class="step-header">
+              <div class="step-num">1</div>
+              <h2 class="step-title">Choose an amount</h2>
+            </div>
+            <div class="amount-grid">
+              <button class="amount-btn selected" data-amount="10">
+                $10
+                <span class="amount-sub">A treat</span>
+              </button>
+              <button class="amount-btn" data-amount="25">
+                $25
+                <span class="amount-sub">A week's fix</span>
+              </button>
+              <button class="amount-btn" data-amount="50">
+                $50
+                <span class="amount-sub">Pure joy</span>
+              </button>
+              <button class="amount-btn" data-amount="75">
+                $75
+                <span class="amount-sub">A generous gift</span>
+              </button>
+              <button class="amount-btn" data-amount="100">
+                $100
+                <span class="amount-sub">Coffee for days</span>
+              </button>
+              <button class="amount-btn" data-amount="custom">
+                Custom
+                <span class="amount-sub">Your choice</span>
+              </button>
+            </div>
+            <div class="custom-row" id="customRow">
+              <span class="custom-label">Amount:</span>
+              <div class="custom-input-wrap">
+                <span>$</span>
+                <input
+                  class="custom-input"
+                  id="customAmount"
+                  type="number"
+                  min="5"
+                  max="500"
+                  placeholder="Enter amount"
+                />
               </div>
-              </section>
-              <main>
-                <div class="gift-wrapper">
-                  <div class="form-panel">
-                    <!-- Amount -->
-                    <div class="step-block">
-                      <div class="step-header">
-                        <div class="step-num">1</div>
-                        <h2 class="step-title">Choose an amount</h2>
-                      </div>
-                      <div class="amount-grid">
-                        <button class="amount-btn selected" data-amount="10"></button>
-                        $10
-                        <span class="amount-sub">A treat</span>
-                      </button>
-                      <button class="amount-btn" data-amount="25">
-                      $25
-                      <span class="amount-sub">A week's fix</span>
-                    </button>
-                    <button class="amount-btn" data-amount="50">
-                      $50
-                      <span class="amount-sub">Pure joy</span>
-                      </button>
-                      <button class="amount-btn" data-amount="75">
-                        $75
-                        <span class="amount-sub">A generous gift</span>
-                        </button>
-                        <button class="amount-btn" data-amount="100">
-                          $100
-                          <span class="amount-sub">Coffee for days</span>
-                          </button>
-                          <button class="amount-btn" data-amount="custom">
-                            Custom 
-                            <span class="amount-sub">Your choice</span>
-                            </button>
-                            </div>
-                            <div class="custom-row" id="customRow">
-                              <span class="custom-label">Amount:</span>
-                              <div class="custom-input-wrap">
-                                <span>$</span>
-                                <input class="custom-input" id="customAmount" type="number" min="5" max="500" placeholder="Enter amount">
-                                </div>
-                                </div>
-                                </div>
-                                <!-- Theme -->
-                                 <div class="step-block">
-                                  <div class="step-header">
-                                    <div class="step-num">2</div>
-                                    <h2 class="step-title">Pick a Card Design</h2>
-                                    </div>
-                                    <div class="theme-grid">
-                                      <button class="theme-btn selected" data-theme="ember" aria-label="Ember theme">
-                                        <div class="theme-swatch swatch-ember">
-                                          <span class="theme-name">Ember</span>
-                                          </div>
-                                          </button>
-                                          <button class="theme-btn" data-theme="latte" aria-label="Latte theme">
-                                            <div class="theme-swatch swatch-latte">
-                                              <span class="theme-name">Latte</span>
-                                              </div>
-                                              </button>
-                                              <button class="theme-btn" data-theme="midnight" aria-label="Midnight theme">
-                                                <div class="theme-swatch swatch-midnight">
-                                                  <span class="theme-name">Midnight</span>
-                                                  </div>
-                                                  </button>
-                                                  <button class="theme-btn" data-theme="cream" aria-label="Cream theme">
-                                                    <div class="theme-swatch swatch-cream">
-                                                      <span class="theme-name">Cream</span>
-                                                      </div>
-                                                      </button>
-                                                      <button class="theme-btn" data-theme="maple" aria-label="Maple theme">
-                                                        <div class="theme-swatch swatch-maple">
-                                                          <span class="theme-name">Maple</span>
-                                                          </div>
-                                                          </button>
-                                                          <button class="theme-btn" data-theme="forest" aria-label="Forest theme">
-                                                            <div class="theme-swatch swatch-forest">
-                                                              <span class="theme-name">Forest</span>
-                                                              </div>
-                                                              </button>
-                                                              </div>
-                                                              </div>
-                                                              <!-- Personalize -->
-                                                               <div class="step-block">
-                                                                <div class="step-header">
-                                                                  <div class="step-num">3</div>
-                                                                  <h2 class="step-title">Personalize It</h2>
-                                                                  </div>
-                                                                  <div class="form-fields">
-                                                                    <div class="field-row">
-                                                                      <div class="field-group">
-                                                                        <label class="field-label" for="recipientName">Recipient's Name</label>
-                                                                        <input class="field-input" id="recipientName" type="text" placeholder="e.g. Jane">
-                                                                        </div>
-                                                                        <div class="field-group">
-                                                                          <label class="field-label" for="senderName">Your Name</label>
-                                                                          <input class="field-input" id="senderName" type="text" placeholder="e.g. Jake">
-                                                                          </div>
-                                                                          </div>
-                                                                          <div class="field-group">
-                                                                            <label class="field-label" for="giftMessage">Personalize Message</label>
-                                                                            <textarea class="field-textarea" id="giftMessage" placeholder="e.g. Enjoy your next coffee break on me!"></textarea>
-                                                                            </div>
-                                                                            </div>
-                                                                            </div>
-                                                                            <!-- Delivery -->
-                                                                             <div class="step-block">
-                                                                              <div class="step-header">
-                                                                                <div class="step-num">4</div>
-                                                                                <h2 class="step-title">Delivery Method</h2>
-                                                                                </div>
-                                                                                <div class="delivery-toggle">
-                                                                                  <button class="delivery-btn active" data-delivery="email">Send by Email</button>
-                                                                                  <button class="delivery-btn" data-delivery="print">Print at Home</button>
-                                                                                  <button class="delivery-btn" data-delivery="instore">Pick Up In-Store</button>
-                                                                                  </div>
-                                                                                  <div id="deliveryEmailField">
-                                                                                    <div class="field-group">
-                                                                                      <label class="field-label" for="recipientEmail">Recipient's Email</label>
-                                                                                      <input class="field-input" id="recipientEmail" type="email" placeholder="jane@example.com">
-                                                                                      </div>
-                                                                                      <div class="field-group">
-                                                                                        <label class="field-label" for="sendDate">Delivery Date</label>
-                                                                                        <input class="field-input" id="sendDate" type="date">
-                                                                                        </div>
-                                                                                        </div>
-                                                                                        </div>
-                                                                                        <!-- Purchase -->
-                                                                                         <button class="purchase-btn" id="purchaseBtn">
-                                                                                          Purchase Gift Card
-                                                                                          </button>
-                                                                                          </div>
-                                                                                          <!-- Preview -->
-                                                                                           <div class="preview-panel">
-                                                                                            <span class="preview-label">Live Preview</span>
+            </div>
+          </div>
+          <!-- Theme -->
+          <div class="step-block">
+            <div class="step-header">
+              <div class="step-num">2</div>
+              <h2 class="step-title">Pick a Card Design</h2>
+            </div>
+            <div class="theme-grid">
+              <button
+                class="theme-btn selected"
+                data-theme="ember"
+                aria-label="Ember theme"
+              >
+                <span class="theme-swatch swatch-ember">
+                  <span class="theme-name">Ember</span>
+                </span>
+              </button>
+              <button
+                class="theme-btn"
+                data-theme="latte"
+                aria-label="Latte theme"
+              >
+                <span class="theme-swatch swatch-latte">
+                  <span class="theme-name">Latte</span>
+                </span>
+              </button>
+              <button
+                class="theme-btn"
+                data-theme="midnight"
+                aria-label="Midnight theme"
+              >
+                <span class="theme-swatch swatch-midnight">
+                  <span class="theme-name">Midnight</span>
+                </span>
+              </button>
+              <button
+                class="theme-btn"
+                data-theme="cream"
+                aria-label="Cream theme"
+              >
+                <span class="theme-swatch swatch-cream">
+                  <span class="theme-name">Cream</span>
+                </span>
+              </button>
+              <button
+                class="theme-btn"
+                data-theme="maple"
+                aria-label="Maple theme"
+              >
+                <span class="theme-swatch swatch-maple">
+                  <span class="theme-name">Maple</span>
+                </span>
+              </button>
+              <button
+                class="theme-btn"
+                data-theme="forest"
+                aria-label="Forest theme"
+              >
+                <span class="theme-swatch swatch-forest">
+                  <span class="theme-name">Forest</span>
+                </span>
+              </button>
+            </div>
+          </div>
+          <!-- Personalize -->
+          <div class="step-block">
+            <div class="step-header">
+              <div class="step-num">3</div>
+              <h2 class="step-title">Personalize It</h2>
+            </div>
+            <div class="form-fields">
+              <div class="field-row">
+                <div class="field-group">
+                  <label class="field-label" for="recipientName"
+                    >Recipient's Name</label
+                  >
+                  <input
+                    class="field-input"
+                    id="recipientName"
+                    type="text"
+                    placeholder="e.g. Jane"
+                  />
+                </div>
+                <div class="field-group">
+                  <label class="field-label" for="senderName">Your Name</label>
+                  <input
+                    class="field-input"
+                    id="senderName"
+                    type="text"
+                    placeholder="e.g. Jake"
+                  />
+                </div>
+              </div>
+              <div class="field-group">
+                <label class="field-label" for="giftMessage"
+                  >Personalize Message</label
+                >
+                <textarea
+                  class="field-textarea"
+                  id="giftMessage"
+                  placeholder="e.g. Enjoy your next coffee break on me!"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <!-- Delivery -->
+          <div class="step-block">
+            <div class="step-header">
+              <div class="step-num">4</div>
+              <h2 class="step-title">Delivery Method</h2>
+            </div>
+            <div class="delivery-toggle">
+              <button class="delivery-btn active" data-delivery="email">
+                Send by Email
+              </button>
+              <button class="delivery-btn" data-delivery="print">
+                Print at Home
+              </button>
+              <button class="delivery-btn" data-delivery="instore">
+                Pick Up In-Store
+              </button>
+            </div>
+            <div id="deliveryEmailField">
+              <div class="field-group">
+                <label class="field-label" for="recipientEmail"
+                  >Recipient's Email</label
+                >
+                <input
+                  class="field-input"
+                  id="recipientEmail"
+                  type="email"
+                  placeholder="jane@example.com"
+                />
+              </div>
+              <div class="field-group">
+                <label class="field-label" for="sendDate">Delivery Date</label>
+                <input class="field-input" id="sendDate" type="date" />
+              </div>
+            </div>
+          </div>
+          <!-- Purchase -->
+          <button class="purchase-btn" id="purchaseBtn">
+            Purchase Gift Card
+          </button>
+        </div>
+        <!-- Preview -->
+        <div class="preview-panel">
+          <span class="preview-label">Live Preview</span>
 
-                                                                                            <!-- Gift Card -->
-                                                                                             <div class="gift-card theme-ember" id="giftCard">
-                                                                                              <div class="card-ring-1"></div>
-                                                                                              <div class="card-ring-2"></div>
-                                                                                              <div class="card-shimmer"></div>
-                                                                                              <div class="card-inner">
-                                                                                                <div class="card-top">
-                                                                                                  <div class="card-logo">
-                                                                                                    Little Embers Café
-                                                                                                    <span>Gift Card</span>
-                                                                                                    </div>
-                                                                                                    <span class="card-icon"></span>
-                                                                                                    </div>
-                                                                                                    <div class="card-middle">
-                                                                                                      <p class="card-to">For</p>
-                                                                                                      <p class="card-recipient" id="cardRecipient">Someone Special</p>
-                                                                                                      <p class="card-message-preview" id="cardMessage">Enjoy your next coffee break!</p>
-                                                                                                      </div>
-                                                                                                      <div class="card-bottom">
-                                                                                                        <div>
-                                                                                                          <p class="card-amount-label">Gift Value</p>
-                                                                                                          <p class="card-amount" id="cardAmount">$10</p>
-                                                                                                          </div>
-                                                                                                          <div class="card-code">
-                                                                                                            <p class="card-code-num" id="cardCode">LEP-XXXX-XXXX</p>
-                                                                                                            <p class="card-from" id="cardFrom">From a friend</p>
-                                                                                                            </div>
-                                                                                                            </div>
-                                                                                                            </div>
-                                                                                                            </div>
-                                                                                                            <!-- Order Summary -->
-                                                                                                             <div class="order-summary">
-                                                                                                              <p class="summary-title">Order Summary</p>
-                                                                                                              <div class="summary-row">
-                                                                                                                <span>Gift Card Value</span>
-                                                                                                                <span id="summaryValue">$10.00</span>
-                                                                                                                </div>
-                                                                                                                <div class="summary-row">
-                                                                                                                  <span>Processing Fee</span>
-                                                                                                                  <span>$0.00</span>
-                                                                                                                  </div>
-                                                                                                                  <div class="summary-row">
-                                                                                                                    <span>Delivery</span>
-                                                                                                                    <span>Free</span>
-                                                                                                                    </div>
-                                                                                                                    <div class="summary-row total">
-                                                                                                                      <span>Total</span>
-                                                                                                                      <span id="summaryTotal">$10.00</span>
-                                                                                                                      </div>
-                                                                                                                      </div>
-                                                                                                                      </div>
-                                                                                                                      </div>
-                                                                                                                      </main>
-                                                                                                                      <!-- How it Works -->
-                                                                                                                       <section class="how-strip">
-                                                                                                                        <div class="how-inner">
-                                                                                                                          <span class="how-label">Simple &amp; Thoughtful</span>
-                                                                                                                          <h2 class="how-title">How It Works</h2>
-                                                                                                                          <div class="how-grid">
-                                                                                                                            <div class="how-step reveal">
-                                                                                                                              <div class="how-num">1</div>
-                                                                                                                              <h3 class="how-step-title">Choose Your Amount</h3>
-                                                                                                                              <p class="how-step-desc">Pick from our preset values or enter a custom amount between $5 and $500.</p>
-                                                                                                                              </div>
-                                                                                                                              <div class="how-step reveal reveal-d1">
-                                                                                                                                <div class="how-num">2</div>
-                                                                                                                                <h3 class="how-step-title">Personalize the Card</h3>
-                                                                                                                                <p class="how-step-desc">Add the recipient's name, a heartfelt message, and pick a card design.</p>
-                                                                                                                                </div>
-                                                                                                                                <div class="how-step reveal reveal-d2">
-                                                                                                                                  <div class="how-num">3</div>
-                                                                                                                                  <h3 class="how-step-title">Send It Instantly</h3>
-                                                                                                                                  <p class="how-step-desc">We'll deliver it by email on your chosen date, or you can print it yourself.</p>
-                                                                                                                                  </div>
-                                                                                                                                  <div class="how-step reveal reveal-d3">
-                                                                                                                                    <div class="how-num">4</div>
-                                                                                                                                    <h3 class="how-step-title">Redeem In-Store</h3>
-                                                                                                                                    <p class="how-step-desc">Your recipient shows the code at the counter and enjoys their favorite drink.</p>
-                                                                                                                                    </div>
-                                                                                                                                    </div>
-                                                                                                                                    </div>
-                                                                                                                                    </section>
-                                                                                                                                    <!-- Success Message -->
-                                                                                                                                     <div class="modal-overlay" id="modalOverlay">
-                                                                                                                                      <div class="modal">
-                                                                                                                                        <div class="modal-icon"></div>
-                                                                                                                                        <h2 class="modal-title">Gift Card Sent!</h2>
-                                                                                                                                        <p class="modal-sub" id="modalMessage">Your gift card is on its way. We hope it brings a warm smile and a perfect cup of coffee.</p>
-                                                                                                                                        <div class="modal-code" id="modalCode">LEP-XXXX-XXXX</div>
-                                                                                                                                        <button class="modal-close" id="modalClose">Done - Back to the Café</button>
-                                                                                                                                        </div>
-                                                                                                                                        </div>
-                                                                                                                                        <!-- Footer -->
-                                                                                                                                         <footer>
-                                                                                                                                          <div class="footer-grid">
-                                                                                                                                            <div>
-                                                                                                                                              <p class="footer-logo">Little Embers Café</p>
-                                                                                                                                              <p class="footer-tagline">A cozy space to gather, connect, and enjoy handcrafted coffee made with care. Tempe, AZ.</p>
-                                                                                                                                              <div class="footer-social">
-                                                                                                                                                <div class="footer-social-icon"></div>
-                                                                                                                                                <div class="footer-social-icon"></div>
-                                                                                                                                                <div class="footer-social-icon"></div>
-                                                                                                                                                </div>
-                                                                                                                                                </div>
-                                                                                                                                                <div>
-                                                                                                                                                  <p class="footer-heading">Quick Links</p>
-                                                                                                                                                  <ul class="footer-links">
-                                                                                                                                                    <li><a href="#">Home</a></li>
-                                                                                                                                                    <li><a href="#">Menu</a></li>
-                                                                                                                                                    <li><a href="#">About</a></li>
-                                                                                                                                                    <li><a href="#">Contact</a></li>
-                                                                                                                                                  </ul>
-                                                                                                                                                  </div>
-                                                                                                                                                  <div>
-                                                                                                                                                    <p class="footer-heading">Contact Us</p>
-                                                                                                                                                    <p class="footer-contact-info">(480) 285-7909<br>hello@littleembers.com<br>2491 East Avenue, Tempe AZ<br><br>Mon-Fri: 6AM-8PM<br>Sat-Sun: 7AM-PM</p>
-                                                                                                                                                    </div>
-                                                                                                                                                    <div>
-                                                                                                                                                      <p class="footer-heading">Subscribe to our Newsletter</p>
-                                                                                                                                                      <p class="footer-newsletter-desc">Stay cozy - get updates on seasonal drinks and events.</p>
-                                                                                                                                                      <div class="newsletter-form">
-                                                                                                                                                        <input type="email" class="newsletter-input" placeholder="Enter your email address">
-                                                                                                                                                        <button class="newsletter-btn">Subscribe</button>
-                                                                                                                                                        </div>
-                                                                                                                                                        </div>
-                                                                                                                                                        </div>
-                                                                                                                                                        <div class="footer-bottom">&amp; 2026 Little Embers Café. All rights reserved</div>
-                                                                                                                                         </footer>
+          <!-- Gift Card -->
+          <div class="gift-card theme-ember" id="giftCard">
+            <div class="card-ring-1"></div>
+            <div class="card-ring-2"></div>
+            <div class="card-shimmer"></div>
+            <div class="card-inner">
+              <div class="card-top">
+                <div class="card-logo">
+                  Little Embers Café
+                  <span>Gift Card</span>
+                </div>
+                <span class="card-icon"></span>
+              </div>
+              <div class="card-middle">
+                <p class="card-to">For</p>
+                <p class="card-recipient" id="cardRecipient">Someone Special</p>
+                <p class="card-message-preview" id="cardMessage">
+                  Enjoy your next coffee break!
+                </p>
+              </div>
+              <div class="card-bottom">
+                <div>
+                  <p class="card-amount-label">Gift Value</p>
+                  <p class="card-amount" id="cardAmount">$10</p>
+                </div>
+                <div class="card-code">
+                  <p class="card-code-num" id="cardCode">LEP-XXXX-XXXX</p>
+                  <p class="card-from" id="cardFrom">From a friend</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Order Summary -->
+          <div class="order-summary">
+            <p class="summary-title">Order Summary</p>
+            <div class="summary-row">
+              <span>Gift Card Value</span>
+              <span id="summaryValue">$10.00</span>
+            </div>
+            <div class="summary-row">
+              <span>Processing Fee</span>
+              <span>$0.00</span>
+            </div>
+            <div class="summary-row">
+              <span>Delivery</span>
+              <span>Free</span>
+            </div>
+            <div class="summary-row total">
+              <span>Total</span>
+              <span id="summaryTotal">$10.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- How it Works -->
+    <section class="how-strip">
+      <div class="how-inner">
+        <span class="how-label">Simple &amp; Thoughtful</span>
+        <h2 class="how-title">How It Works</h2>
+        <div class="how-grid">
+          <div class="how-step reveal">
+            <div class="how-num">1</div>
+            <h3 class="how-step-title">Choose Your Amount</h3>
+            <p class="how-step-desc">
+              Pick from our preset values or enter a custom amount between $5
+              and $500.
+            </p>
+          </div>
+          <div class="how-step reveal reveal-d1">
+            <div class="how-num">2</div>
+            <h3 class="how-step-title">Personalize the Card</h3>
+            <p class="how-step-desc">
+              Add the recipient's name, a heartfelt message, and pick a card
+              design.
+            </p>
+          </div>
+          <div class="how-step reveal reveal-d2">
+            <div class="how-num">3</div>
+            <h3 class="how-step-title">Send It Instantly</h3>
+            <p class="how-step-desc">
+              We'll deliver it by email on your chosen date, or you can print it
+              yourself.
+            </p>
+          </div>
+          <div class="how-step reveal reveal-d3">
+            <div class="how-num">4</div>
+            <h3 class="how-step-title">Redeem In-Store</h3>
+            <p class="how-step-desc">
+              Your recipient shows the code at the counter and enjoys their
+              favorite drink.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Success Message -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal">
+        <div class="modal-icon"></div>
+        <h2 class="modal-title">Gift Card Sent!</h2>
+        <p class="modal-sub" id="modalMessage">
+          Your gift card is on its way. We hope it brings a warm smile and a
+          perfect cup of coffee.
+        </p>
+        <div class="modal-code" id="modalCode">LEP-XXXX-XXXX</div>
+        <button class="modal-close" id="modalClose">
+          Done - Back to the Café
+        </button>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-grid">
+        <div>
+          <p class="footer-logo">Little Embers Café</p>
+          <p class="footer-tagline">
+            A cozy space to gather, connect, and enjoy handcrafted coffee made
+            with care. Tempe, AZ.
+          </p>
+          <div class="footer-social">
+            <div class="footer-social-icon"></div>
+            <div class="footer-social-icon"></div>
+            <div class="footer-social-icon"></div>
+          </div>
+        </div>
+        <div>
+          <p class="footer-heading">Quick Links</p>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Contact Us</p>
+          <p class="footer-contact-info">
+            (480) 285-7909<br />hello@littleembers.com<br />2491 East Avenue,
+            Tempe AZ<br /><br />Mon-Fri: 6AM-8PM<br />Sat-Sun: 7AM-PM
+          </p>
+        </div>
+        <div>
+          <p class="footer-heading">Subscribe to our Newsletter</p>
+          <p class="footer-newsletter-desc">
+            Stay cozy - get updates on seasonal drinks and events.
+          </p>
+          <div class="newsletter-form">
+            <input
+              type="email"
+              class="newsletter-input"
+              placeholder="Enter your email address"
+            />
+            <button class="newsletter-btn">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &amp; 2026 Little Embers Café. All rights reserved
+      </div>
+    </footer>
 
-    <script src="js/giftcard.js"></script>          
+    <script src="js/giftcard.js"></script>
   </body>
 </html>

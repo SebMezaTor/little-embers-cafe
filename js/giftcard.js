@@ -45,10 +45,10 @@ function updatePreview() {
   document.getElementById("summaryTotal").textContent =
     state.amount === "custom" ? "-" : formatMoney(state.amount);
 
-  const card = document.getElementBtId("giftCard");
+  const card = document.getElementById("giftCard");
   card.className = `gift-card theme-${state.theme}`;
 
-  document.getElementById(cardRecipient).textContent =
+  document.getElementById("cardRecipient").textContent =
     state.recipient.trim() || "Someone Special";
   document.getElementById("cardFrom").textContent = state.sender.trim()
     ? `From ${state.sender}`
