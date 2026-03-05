@@ -1316,3 +1316,40 @@ footer {
     transition-duration: 0.01ms !important;
   }
 }
+
+/*Tablet */
+@media screen and (min-width: 601px) {
+  :root {
+    --nav-h: 68px;
+  }
+
+  nav {
+    padding: 0 1.5rem;
+  }
+
+  .logo {
+    font-size: 1.45rem;
+  }
+
+  .page-banner {
+    padding: 4.5rem 2rem 4rem;
+  }
+
+  .gift-wrapper {
+    padding: 3rem 1.5rem 4rem;
+    gap: 3rem;
+  }
+
+  .amount-btn {
+    padding: 0.9rem 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .theme-swatch {
+    height: 64px;
+  }
+
+  .field-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
