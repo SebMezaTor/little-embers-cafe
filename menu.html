@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Sebastian Meza-Torres" />
+    <meta
+      name="keywords"
+      content="menu, coffee, pastries, drinks, Little Embers Café"
+    />
+    <meta
+      name="description"
+      content="Browse the Little Embers Café menu - handcrafted drinks and freshly baked pastries."
+    />
+    <title>Menu - Little Embers Café</title>
+    <link href="css/menu.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Primary navigation">
+        <span class="logo">Little Embers Café</span>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" class="active">Menu</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="cart-btn" id="cartToggle" aria-label="Open cart">
+            <i class="fa-solid fa-mug-hot"></i>
+            <span class="cart-badge" id="cartBadge">0</span>
+          </button>
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+      <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="accent-strip"></div>
+    </header>
+    <section class="page-banner">
+      <div class="banner-inner">
+        <span class="banner-eyebrow">What We Serve</span>
+        <h1 class="banner-title">Our Menu</h1>
+        <p class="banner-sub">
+          Handcrafted drinks and freshly baked pastries, made with care every
+          single day.
+        </p>
+        <div class="search-wrap">
+          <input
+            class="search-wrap"
+            id="searchInput"
+            type="search"
+            placeholder="Search drinks or pastries...."
+            aria-label="Search menu"
+          />
+          <button
+            class="search-clear"
+            id="searchClear"
+            aria-label="Clear search"
+          >
+            &#x2715;
+          </button>
+          <span class="search-icon" aria-hidden="true"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></span>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
