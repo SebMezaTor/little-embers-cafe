@@ -12,15 +12,14 @@
       mobileNav.setAttribute("aria-hidden", String(!isOpen));
     });
 
-    (mobileNav.querySelectorAll("a"),
-      forEach(function (link) {
-        link.addEventListener("click", function () {
-          mobileNav.classList.remove("open");
-          hamburger.classList.remove("open");
-          hamburger.setAttribute("aria-expanded", "false");
-          mobileNav.setAttribute("aria-hidden", "true");
-        });
-      }));
+    mobileNav.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        mobileNav.classList.remove("open");
+        hamburger.classList.remove("open");
+        hamburger.setAttribute("aria-expanded", "false");
+        mobileNav.setAttribute("aria-hidden", "true");
+      });
+    });
 
     document.addEventListener("click", function (e) {
       if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) {
@@ -36,7 +35,7 @@
     `.contact-info, .contact-form-wrap, .map-section, .strip-item, .info-item`,
   );
 
-  if ("intersectionObserver" in window && revealEls.length) {
+  if ("IntersectionObserver" in window && revealEls.length) {
     revealEls.forEach(function (el) {
       el.style.opacity = "0";
       el.style.transform = "translateY(20px)";
@@ -70,13 +69,13 @@
       const lastName = document.getElementById("last-name");
       const email = document.getElementById("email");
       const subject = document.getElementById("subject");
-      const message = document.getElementById("nessage");
+      const message = document.getElementById("message");
 
       const fields = [firstName, lastName, email, subject, message];
       let valid = true;
 
       fields.forEach(function (field) {
-        if (!field || !field.ariaValueMax.trim()) {
+        if (!field || !field.value.trim()) {
           field.style.borderColor = "#c0392b";
           valid = false;
         } else {
@@ -115,7 +114,7 @@
       newsletterBtn.textContent = "Subscribed ✓";
       newsletterBtn.style.background = "#2e7d52";
       setTimeout(function () {
-        newsletterBtn.textContent = "subscribe";
+        newsletterBtn.textContent = "Subscribe";
         newsletterBtn.style.background = "";
         input.value = "";
         input.style.borderColor = "";
