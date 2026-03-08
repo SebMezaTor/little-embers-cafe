@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Sebastian Meza-Torres">
+        <meta name="keywords" content="Contact, Inquiries, General, Events, Little Embers Cafe">
+        <meta name="description" content="This is the contact page for Little Embers Café">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us - Little Embers Café</title>
+        <link href="css/contact.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <!-- Header -->
+      <header class="site-header">
+        <nav class="primary-nav" aria-label="Primary navigation">
+            <a class="logo" href="#">Little Embers Café</a>
+            <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#" class="active">Contact</a></li>
+                <li><a href="#" aria-label="Cart"><i class="fa-solid fa-bag-shopping cart-icon"></i></a></li>
+            </ul>
+            </nav>
+            <!-- Mobile NAV-->
+             <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                </nav>
+                </header>
+                <div class="accent-strip" role="presentation"></div>
+                <main>
+                    <!-- Page Banner -->
+                <section class="page-banner" aria-labelledby="banner-heading">
+                <span class="banner-eyebrow">Get in Touch</span>
+                <h1 class="banner-title" id="banner-heading">Contact Us</h1>
+                <p class="banner-sub">We'd love to hear from you. Whether you have a question, feedback, or want to host an event, we're here to help.</p>
+                </section>
+
+                <!-- Contact Content -->
+                 <section class="contact-wrapper" aria-labelledby="contact-heading">
+
+                <!-- Left Contact Info -->
+                 <aside class="contact-info" aria-label="Contact details">
+                <h2 class="info-heading" id="contact-heading">Contact Information</h2>
+                <div class="info-divider" role="presentation"></div>
+
+                    <address>
+                    <div class="info-item">
+                    <div class="info-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></div>
+                    <div>
+                    <p class="info-text-label">Our Location</p>
+                    <p class="info-text-value">2491 East Avenue<br>Tempe, AZ 85281</p>
+                    </div>
+                    </div>
+
+                    <div class="info-item">
+                    <div class="info-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></div>
+                    <div>
+                    <p class="info-text-label">Phone</p>
+                    <p class="info-text-value"><a href="tel:+14802857909">(480) 285-7909</a></p>
+                    </div>
+                    </div>
+                    <div class="info-item">
+                    <div class="info-icon" aria-hidden="true"><i class="fa-regular fa-clock"></i></div>
+                    <div>
+                    <p class="info-text-label">Hours</p>
+                    <table class="hours-table">
+                    <caption class="visually-hidden">Café hours by day</caption>      
+                    <tbody>
+                    <tr><td>Mon - Fri</td><td>6:00 AM - 8:00 PM</td></tr>  
+                    <tr><td>Sat - Sun</td><td>7:00 AM - 9:00 PM</td></tr>
+                    </tbody>
+                    </table>
+                    </div>
+                    </div>
+                    </address>
+                    
+                    <ul class="social-row" aria-label="Social media links">
+                    <li><a class="social-btn" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a class="social-btn" href="#" aria-label="X /Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a class="social-btn" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                    </aside>
+
+                    <!-- Right Contact Form -->
+                    <article class="contact-form-wrap" aria-labelledby="form-heading">
+                    <h2 class="form-heading" id="form-heading">Send Us a Message</h2>
+                    <div class="form-divider" role="presentation"></div>
+                    <p class="form-sub">Fill out the form below and we'll get back to you within one business day.</p>
+
+                    <form class="contact-form" novalidate>
+                    <div class="form-row">
+                    <div class="form-group">
+                    <label class="form-label" for="first-name">First Name</label>
+                    <input class="form-input" id="first-name" type="text" placeholder="Jane" autocomplete="given-name">
+                    </div>
+                    <div class="form-group">
+                    <label class="form-label" for="last-name">Last Name</label>
+                    <input class="form-input" id="last-name" type="text" placeholder="Doe" autocomplete="family-name">
+                    </div>
+                    </div>
+
+                    <div class="form-group">
+                    <label class="form-label" for="email">Email Address</label>
+                    <input class="form-input" id="email" type="email" placeholder="jane@example.com" autocomplete="email">
+                     </div>
+
+                    <div class="form-group">
+                    <label class="form-label" for="subject">Subject</label>
+                    <select class="form-select" id="subject">
+                    <option value="" disabled selected>Select a topic...</option>
+                    <option>General Inquiry</option>
+                    <option>Event Hosting</option>
+                    <option>Menu Feedback</option>
+                    <option>Wholesale / Partnership</option>
+                    <option>Other</option>
+                    </select>
+                    </div>
+
+                    <div class="form-group">
+                    <label class="form-label" for="message">Message</label>
+                    <textarea class="form-textarea" id="message" placeholder="Tell us how we can help..."></textarea>
+                    </div>
+
+                    <button class="submit-btn" type="submit">Send Message <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+                    </form>
+                    </article>
+
+                    </section>
+
+                    <!-- Info Strip -->
+                    <aside class="info-strip" aria-label="Quick info">
+                    <div class="strip-item">
+                    <i class="fa-solid fa-location-dot strip-icon" aria-hidden="true"></i>
+                    <div>
+                    <p class="strip-label">Find Us</p>
+                    <p class="strip-value">2491 East Avenue, Tempe AZ</p>
+                    </div>
+                    </div>
+                    <div class="strip-item">
+                    <i class="fa-regular fa-clock strip-icon" aria-hidden="true"></i>
+                    <div>
+                    <p class="strip-label">Weekdays</p>
+                    <p class="strip-value">Mon - Fri &nbsp;6AM - 8PM</p>
+                    </div>
+                    </div>
+                    <div class="strip-item">
+                    <i class="fa-regular fa-clock strip-icon" aria-hidden="true"></i>
+                    <div>
+                    <p class="strip-label">Weekends</p>
+                    <p class="strip-value">Sat - Sun &nbsp;7AM - 9PM</p>
+                    </div>
+                    </div>
+                    <div class="strip-item">
+                    <i class="fa-solid fa-phone strip-icon" aria-hidden="true"></i>
+                    <div>
+                     <p class="strip-label">Call Us</p>
+                    <p class="strip-value">(480) 285-7909</p>
+                     </div>
+                    </div>
+                    </aside>
+
+                    <!-- Map Section -->
+                     <section class="map-section" aria-labelledby="map-heading">
+                    <span class="map-section-label">Our Neighborhood</span>
+                    <h2 class="map-section-title" id="map-heading">Find Little Embers Café</h2>
+                    <p class="map-section-sub">2491 East Avenue, Tempe, AZ 85281 - Come say hello.</p>
+                     <!-- THIS IS NOT THE REAL ADDRESS. -->
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.142416692155!2d-111.9219310053249!3d33.41953120482053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08eff83f5c5f%3A0x4ef6485a53e0341a!2s1300%20E%208th%20St%2C%20Tempe%2C%20AZ%2085281!5e0!3m2!1sen!2sus!4v1772942015160!5m2!1sen!2sus"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Little Embers Café on Google Maps"></iframe>
+
+
+</html>
