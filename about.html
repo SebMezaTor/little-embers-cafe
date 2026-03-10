@@ -11,6 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us - Little Embers Café</title>
     <link href="css/about.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -192,59 +196,64 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="site-footer">
       <div class="footer-grid">
-        <div class="footer-col">
+        <div class="footer-brand">
           <p class="footer-logo">Little Embers Café</p>
           <p class="footer-tagline">
             A cozy space to gather, connect, and enjoy handcrafted coffee made
             with care. Tempe, AZ.
           </p>
           <ul class="footer-social" aria-label="Social media links">
-            <!-- Placeholder for social media -->
             <li>
-              <a class="footer-social-icon" href="#" aria-label="Facebook">f</a>
+              <a href="#" class="footer-social-icon" aria-label="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
             </li>
             <li>
-              <a class="footer-social-icon" href="#" aria-label="X (Twitter)"
-                >X</a
-              >
+              <a href="#" class="footer-social-icon" aria-label="X"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
             </li>
             <li>
-              <a class="footer-social-icon" href="#" aria-label="Instagram"></a>
+              <a href="#" class="footer-social-icon" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
             </li>
           </ul>
         </div>
 
-        <div class="footer-col">
+        <nav class="footer-nav" aria-label="Footer navigation">
           <p class="footer-heading">Quick Links</p>
           <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="giftcard.html">Gift Cards</a></li>
           </ul>
-        </div>
-
-        <div class="footer-col">
+        </nav>
+        <address class="footer-contact">
           <p class="footer-heading">Contact Us</p>
-          <address class="footer-contact-info">
+          <p>
             <a href="tel:+14802857909">(480) 285-7909</a><br />
             <a href="mailto:hello@littleembers.com">hello@littleembers.com</a
             ><br />
             2491 East Avenue, Tempe AZ<br /><br />
             Mon-Fri: 6AM-8PM<br />
             Sat-Sun: 7AM-9PM
-          </address>
-        </div>
+          </p>
+        </address>
 
-        <div class="footer-col">
+        <div class="footer-newsletter">
           <p class="footer-heading">Subscribe to Our Newsletter</p>
-          <p class="footer-newsletter-desc">
+          <p class="footer-newsletter-sub">
             Stay cozy - get updates on seasonal drinks and events.
           </p>
-          <div class="newsletter-form">
-            <label for="newsletter-email" class="sr-only">Email Address</label>
+          <form class="newsletter-form" novalidate>
+            <label for="newsletter-email" class="visually-hidden"
+              >Email Address</label
+            >
             <input
               type="email"
               id="newsletter-email"
@@ -252,13 +261,11 @@
               placeholder="Enter your email address"
               autocomplete="email"
             />
-            <button type="button" class="newsletter-btn">Subscribe</button>
-          </div>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>2026 Little Embers Café. All rights reserved.</p>
-      </div>
+      <p class="footer-bottom">2026 Little Embers Café. All rights reserved.</p>
     </footer>
     <script src="js/about.js"></script>
   </body>
