@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Sebastian Meza-Torres" />
+    <meta name="keywords" content="" />
+    <meta
+      name="description"
+      content="This page features the staff members that created Little Embers Café."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Little Embers Café</title>
+    <link href="css/about.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Primary navigation">
+        <span class="logo">Little Embers Café</span>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li>
+            <a href="about.html" class="active" aria-current="page">About</a>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="giftcard.html">Gift Cards</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="cart-btn" aria-label="View cart">🛒</button>
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- Mobile Nav -->
+    <nav
+      id="mobile-nav"
+      class="mobile-nav"
+      aria-label="Mobile navigation"
+      hidden
+    >
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html" class="active" aria-current="page">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="accent-strip" aria-hidden="true"></div>
+    <main>
+      <!--Page Banner -->
+      <section class="page-banner" aria-labelledby="page-heading">
+        <h1 id="page-heading">About Us</h1>
+        <p>
+          Welcome to Little Embers Café, where we craft community and comfort in
+          every cup.
+        </p>
+      </section>
+
+      <!-- Sidebar and Content -->
+      <div class="about-wrapper">
+        <!-- Founder Sidebar -->
+        <aside class="founder-sidebar reveal" aria-label="Founder profile">
+          <!-- I will need to find images on Pixabay or somewhere, I will be adding images in general once I am done with this page. -->
+          <div class="founder-avatar" aria-hidden="true"></div>
+          <p class="founder-name">Jane Doe</p>
+          <span class="founder-role">Founder of Little Embers Café</span>
+          <div class="founder-divider" aria-hidden="true"></div>
+          <p class="founder-bio">
+            Jane started Little Embers Café with a simple goal: create a warm,
+            welcoming space built around quality coffee and genuine connection.
+            She believes small details such as ethical sourcing, thoughtful
+            service, and community focus make the biggest difference.
+          </p>
+        </aside>
+
+        <!-- Right Side, Story + Mission/Values -->
+        <div class="about-content">
+          <!-- Our Story -->
+          <section
+            class="story-block reveal reveal-d1"
+            aria-labelledby="story-heading"
+          >
+            <h2 id="story-heading" class="block-title">Our Story</h2>
+            <p>
+              Little Embers was founded by Jane Doe, a passionate barista with a
+              love for creating community spaces.
+            </p>
+            <p>
+              From our humble beginnings, we set out to create a cozy, welcoming
+              place where everyone can enjoy freshly brewed coffee and delicious
+              homemade pastries. Today, we're proud to be a hub for connection,
+              creativity, and sustainability in our neighborhood.
+            </p>
+          </section>
+
+          <!-- Mission + Values -->
+          <div class="mission-values-row">
+            <section
+              class="mission-block reveal reveal-d1"
+              aria-labelledby="mission-heading"
+            >
+              <h2 id="mission-heading" class="block-title">Our Mission</h2>
+              <ul class="mission-list">
+                <li class="mission-item">
+                  <span class="mission-check" aria-hidden="true">✓</span>
+                  <span>Provide high-quality, handcrafted beverages</span>
+                </li>
+                <li class="mission-item">
+                  <span class="mission-check" aria-hidden="true">✓</span>
+                  <span>Create a warm, inviting space for all</span>
+                </li>
+                <li class="mission-item">
+                  <span class="mission-check" aria-hidden="true">✓</span>
+                  <span>Support local producers and sustainability</span>
+                </li>
+              </ul>
+            </section>
+
+            <section
+              class="values-block reveal reveal-d2"
+              aria-labelledby="values-heading"
+            >
+              <h2 id="values-heading" class="block-title">Our Values</h2>
+              <ul class="values-list">
+                <li class="value-item">
+                  <p class="value-name">Crafted with Quality</p>
+                  <p class="value-desc">
+                    We prioritize premium ingredients and precise techniques in
+                    every cup we serve.
+                  </p>
+                </li>
+                <li class="value-item">
+                  <p class="value-name">Brew with Care</p>
+                  <p class="value-desc">
+                    Every up is brewed with care and attention.
+                  </p>
+                </li>
+                <li class="value-item">
+                  <p class="value-name">Perfect the Recipe</p>
+                  <p class="value-desc">
+                    We test, adjust, and refine every recipe until each drink
+                    delivers the perfect balance of flavor.
+                  </p>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meet Our Team -->
+      <section class="team-section" aria-labelledby="team-heading">
+        <h2 id="team-heading" class="team-heading">Meet Our Team</h2>
+        <div class="team-rule" aria-hidden="true"></div>
+
+        <ul class="team-grid" role="list">
+          <li class="team-card reveal">
+            <!-- Placeholder image here -->
+            <div class="team-avatar" aria-hidden="true"></div>
+            <p class="team-name">John Smith</p>
+            <span class="team-role">Barista</span>
+            <div class="team-divider" aria-hidden="true"></div>
+            <p class="team-bio">Brewing your favorite coffee drinks.</p>
+          </li>
+          <li class="team-card reveal reveal-d1">
+            <!-- Placeholder image here-->
+            <div class="team-avatar" aria-hidden="true"></div>
+            <p class="team-name">Emily Brown</p>
+            <span class="team-role">Pastry Chef</span>
+            <div class="team-divder" aria-hidden="true"></div>
+            <p class="team-bio">
+              Creating delicious pastries and treats daily.
+            </p>
+          </li>
+          <li class="team-card reveal reveal-d2">
+            <!-- Placeholder image here -->
+            <div class="team-avatar" aria-hidden="true"></div>
+            <p class="team-bio">
+              Ensuring everything runs smoothly at our café.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <p class="footer-logo">Little Embers Café</p>
+          <p class="footer-tagline">
+            A cozy space to gather, connect, and enjoy handcrafted coffee made
+            with care. Tempe, AZ.
+          </p>
+          <ul class="footer-social" aria-label="Social media links">
+            <!-- Placeholder for social media -->
+            <li>
+              <a class="footer-social-icon" href="#" aria-label="Facebook">f</a>
+            </li>
+            <li>
+              <a class="footer-social-icon" href="#" aria-label="X (Twitter)"
+                >X</a
+              >
+            </li>
+            <li>
+              <a class="footer-social-icon" href="#" aria-label="Instagram"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-heading">Quick Links</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-heading">Contact Us</p>
+          <address class="footer-contact-info">
+            <a href="tel:+14802857909">(480) 285-7909</a><br />
+            <a href="mailto:hello@littleembers.com">hello@littleembers.com</a
+            ><br />
+            2491 East Avenue, Tempe AZ<br /><br />
+            Mon-Fri: 6AM-8PM<br />
+            Sat-Sun: 7AM-9PM
+          </address>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-heading">Subscribe to Our Newsletter</p>
+          <p class="footer-newsletter-desc">
+            Stay cozy - get updates on seasonal drinks and events.
+          </p>
+          <div class="newsletter-form">
+            <label for="newsletter-email" class="sr-only">Email Address</label>
+            <input
+              type="email"
+              id="newsletter-email"
+              class="newsletter-input"
+              placeholder="Enter your email address"
+              autocomplete="email"
+            />
+            <button type="button" class="newsletter-btn">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>2026 Little Embers Café. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="js/about.js"></script>
+  </body>
+</html>
