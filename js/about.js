@@ -1,27 +1,29 @@
 "use strict";
-
-/*Hamburger Menu */
+/* Hamburger Menu */
 const hamburger = document.getElementById("hamburger");
-const mobileNav = document.getElementById("mobileNav");
+const mobileNav = document.getElementById("mobile-nav");
 
 hamburger.addEventListener("click", () => {
   const isOpen = hamburger.classList.toggle("open");
   hamburger.setAttribute("aria-expanded", String(isOpen));
-  mobileNav.classList.toggle("open", isOpen);
+  if (isOpen) {
+    mobileNav.removeAttribute("hidden");
+  } else {
+    mobileNav.setAttribute("hidden", "");
+  }
 });
 
-/*  Close when nav link is clicked */
+/* Close when NAV link is clicked */
 mobileNav.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => {
     hamburger.classList.remove("open");
-    mobileNav.classList.remove("open");
     hamburger.setAttribute("aria-expanded", "false");
+    mobileNav.setAttribute("hidden", "");
   });
 });
 
 /* Scroll Reveal */
 const revealEls = document.querySelectorAll(".reveal");
-
 const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
