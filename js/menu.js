@@ -53,7 +53,7 @@ tabBtns.forEach((btn) => {
 
     sections.forEach((sec) => {
       if (tab === "all" || sec.dataset.section === tab) {
-        sec.classList.remove(hidden);
+        sec.classList.remove("hidden");
       } else {
         sec.classList.add("hidden");
       }
@@ -106,17 +106,18 @@ function runSearch() {
     const name = card.dataset.name || "";
     const desc = card.dataset.desc || "";
     const match = name.includes(query) || desc.includes(query);
+    card.classList.toggle("hidden-item", !match);
     if (match) anyVisible = true;
   });
 
   sections.forEach((sec) => {
-    const hasVisible = [...sec.querySelectorAll("item-card")].some(
+    const hasVisible = [...sec.querySelectorAll(".item-card")].some(
       (c) => !c.classList.contains("hidden-item"),
     );
     sec.classList.toggle("hidden", !hasVisible);
   });
 
-  (noResults.classList, toggle("visible", !anyVisible));
+  noResults.classList.toggle("visible", !anyVisible);
 }
 
 /* Cart */
@@ -164,7 +165,7 @@ function renderCart() {
     return;
   }
 
-  if (cartEmpty.parentNode === cartItems) cart.Empty.remove();
+  if (cartEmpty.parentNode === cartItems) cartEmpty.remove();
 
   const incoming = new Set(entries.map(([k]) => k));
   cartItems.querySelectorAll(".cart-item").forEach((el) => {

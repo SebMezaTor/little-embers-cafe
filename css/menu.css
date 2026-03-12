@@ -191,7 +191,7 @@ nav {
   font-size: 1.25rem;
   color: var(--dark-roast);
   position: relative;
-  transition: transform var(-transition);
+  transition: transform var(--transition);
 }
 
 .cart-btn:hover {
@@ -627,6 +627,7 @@ main {
   justify-content: space-between;
   gap: 1rem;
   margin-bottom: 0.45rem;
+  padding-top: 1.6rem;
 }
 
 .item-name {
@@ -914,7 +915,9 @@ main {
   text-transform: uppercase;
   border: none;
   cursor: pointer;
-  transition: background var(--transition) transform 0.15s;
+  transition:
+    background var(--transition),
+    transform 0.15s;
 }
 
 .checkout-btn:hover {
