@@ -160,7 +160,7 @@ header {
 }
 /* Nav */
 nav {
-  height: var(--nav-h);
+  min-height: var(--nav-h);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -255,13 +255,8 @@ nav {
 /* Mobile Nav */
 .mobile-nav {
   display: none;
-  position: fixed;
-  top: var(--nav-h);
-  left: 0;
-  right: 0;
   background: var(--ceramic);
   border-bottom: 2px solid var(--latte);
-  z-index: 999;
   padding: 1.5rem 2rem 2rem;
   flex-direction: column;
   gap: 1.2rem;
