@@ -173,7 +173,7 @@ main {
   z-index: 1;
 }
 /* NAV */
-nav {
+nav:not(.mobile-nav) {
   height: var(--nav-h);
   display: flex;
   align-items: center;
@@ -211,11 +211,15 @@ nav {
   transform: scale(1.12);
 }
 /* Hamburger menu for mobile */
+/* I had to change the CSS to make sure the hamburger menu worked */
 .hamburger {
   display: flex;
   flex-direction: column;
   gap: 5px;
   padding: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .hamburger span {
@@ -243,35 +247,42 @@ nav {
 /* Mobile Nav */
 .mobile-nav {
   display: none;
-  position: sticky;
-  top: var(--nav-h);
-  left: 0;
-  right: 0;
-  background: var(--ceramic);
-  border-bottom: 2px solid var(--latte);
-  z-index: 199;
-  padding: 1.5rem 2rem 2rem;
   flex-direction: column;
-  gap: 1.2rem;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  background: var(--ceramic);
+  border-top: 1px solid var(--border);
+  padding: 0.5rem 0;
 }
 
 .mobile-nav.open {
   display: flex;
 }
 
-.mobile-nav a {
-  font-size: 1rem;
-  color: var(--dark-roast);
-  padding: 0.5rem 0;
-  border-bottom: 1px solid var(--border);
-  letter-spacing: 0.05em;
+.mobile-nav ul {
+  display: flex;
+  flex-direction: column;
 }
 
-.mobile-nav a.active {
-  color: var(--espresso);
-  font-weight: 700;
+.mobile-nav a {
+  display: block;
+  padding: 0.85rem 1.5rem;
+  font-size: 0.95rem;
+  color: var(--dark-roast);
+  text-decoration: none;
+  border-left: 3px solid transparent;
+  transition:
+    color var(--transition),
+    border-color var(--transition),
+    background var(--transition);
 }
+
+.mobile-nav a:hover,
+.mobile-nav a.active {
+  border-left-color: var(--latte);
+  background: rgba(180, 134, 63, 0.06);
+  color: var(--espresso);
+}
+/*These were the changes I made for the hamburger menu to appear */
+
 /* Accent Strip */
 .accent-strip {
   height: 4px;
@@ -1435,6 +1446,10 @@ footer {
     right: 0;
     height: 2px;
     background: var(--latte);
+  }
+  /* I had to add the .mobile-nav in the desktop media query to force the hamburger menu links to stay away from the desktop. I dont know how else to fix it. */
+  .mobile-nav {
+    display: none !important;
   }
 
   .hamburger {
