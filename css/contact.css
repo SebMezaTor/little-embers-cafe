@@ -195,21 +195,22 @@ body {
 
 .hamburger {
   display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
   height: 2px;
   background: var(--dark-roast);
   border-radius: 2px;
   transition:
     transform var(--transition),
-    opacity var(--transition);
-}
-
-.hamburger span {
-  display: block;
-  height: 2px;
-  background: var(--dark-roast);
-  border-radius: 2px;
-  transition:
-    transition var(--transition),
     opacity var(--transition);
 }
 
@@ -316,7 +317,7 @@ body {
   font-size: 0.72rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: var(-latte);
+  color: var(--latte);
   margin-bottom: 0.8rem;
 }
 
@@ -405,7 +406,7 @@ body {
   flex-shrink: 0;
   transition:
     background var(--transition),
-    border color var(--transition),
+    border-color var(--transition),
     color var(--transition);
 }
 
