@@ -196,7 +196,7 @@ nav {
 
 .skip-link {
   position: absolute;
-  top: -100%;
+  top: -9999px;
   left: 1rem;
   background: var(--espresso);
   color: var(--ceramic);
