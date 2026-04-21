@@ -194,6 +194,22 @@ nav {
   transition: all 0.3s;
 }
 
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  background: var(--espresso);
+  color: var(--ceramic);
+  padding: 0.75rem 1.25rem;
+  font-size: 0.85rem;
+  z-index: 999;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
 .nav-links {
   display: none;
   position: absolute;
