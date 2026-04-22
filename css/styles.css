@@ -147,9 +147,44 @@ table {
   --dark-roast: #1a0f07;
   --warm-white: #fdf8f3;
 }
+/* Dark Mode */
+/*
+body.dark {
+  --warm-white: #1a1209;
+  --ceramic: #2a1e12;
+  --espresso: #414140;
+  --dark-roast: #0f0a05;
+  --latte: #c9963f;
+}
+
+body.dark nav {
+  background: #0f0a05;
+}
+
+body.dark .hero {
+  background: #1a1209;
+}
+
+body.dark .testimonials {
+  background: #150e07;
+}
+
+body.dark .drink-card {
+  background: #2a1e12;
+}
+
+body.dark .testimonial-card {
+  background: #2a1e12;
+}
+
+body.dark .why-section {
+  background: #0f0a05;
+}
+ */
 
 /* GLOBAL STYLES (Mobile) */
 /* ==============  Beginning of Home Page =============== */
+
 body {
   font-family: "Lato", sans-serif;
   background-color: var(--warm-white);
@@ -209,7 +244,50 @@ nav {
 .skip-link:focus {
   top: 1rem;
 }
+/* Dark Mode */
+/*
+.dark-toggle {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  cursor: pointer;
+  
+}
 
+.dark-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.dark-toggle-slider {
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  transition: background 0.3s;
+  background: rgba(255,255,255,0.15);
+}
+
+.dark-toggle-slider:before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 3px;
+  top: 3px;
+  background: var(--ceramic);
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+input:checked + .dark-toggle-slider {
+  background: var(--latte);
+}
+
+input:checked + .dark-toggle-slider:before {
+  transform: translateX(20px);
+}
+*/
 .nav-links {
   display: none;
   position: absolute;
