@@ -4,7 +4,7 @@ const navLinks = document.querySelector(" .nav-links");
 menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("open");
 });
-
+/* Dark Mode function */
 const darkModeBtn = document.getElementById("darkModeBtn");
 
 darkModeBtn.addEventListener("change", () => {
